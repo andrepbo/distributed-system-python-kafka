@@ -1,4 +1,3 @@
-import time
 import json
 from confluent_kafka import Producer
 
@@ -8,7 +7,7 @@ bootstrap_servers = 'localhost:9092'
 topic = 'ai_data_topic'  # Specify the Kafka topic
 
 # Simulated data to send to the AI server
-data = {"input": [0.1, 0.2, 0.3, 0.4]}
+data = {"input": [0.1, 0.2, 0.3]}
 
 print('Sending data to the AI server:', data)  # Display the sent data
 
